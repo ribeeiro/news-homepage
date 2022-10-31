@@ -56,3 +56,33 @@ p{
     padding: 10px;
     letter-spacing: 2px;
 }
+
+.new-card {
+    background-color: hsl(240, 100%, 5%);
+    padding: 19px;
+    margin: 50px 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.new:nth-child(-n+3)::after{
+    display: inline-block;
+    content: '';
+    border-top: solid 1px white;
+    width: 96%;
+}
+.new-title {
+    color: hsl(35, 77%, 62%);
+}
+
+.new-article__title{
+    color: hsl(36, 100%, 99%);
+    margin-bottom: 0;
+}
+
+.new-article__description{
+    color: hsl(233, 8%, 79%);
+    margin-top: 5px;
+    line-height: 1.7;
+}
