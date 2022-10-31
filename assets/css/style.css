@@ -3,7 +3,8 @@
 
 body {
     background-color: hsl(36, 100%, 99%);
-    padding: 0 10px;
+    padding: 0 18px;
+    margin: 0;
     font-family: 'Inter', sans-serif;
 }
 
@@ -85,4 +86,35 @@ p{
     color: hsl(233, 8%, 79%);
     margin-top: 5px;
     line-height: 1.7;
+}
+
+.topic{
+    display: flex;
+    height: 120px;
+    padding: 15px 0;
+}
+
+.topic-info{
+    padding-left: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topic-index {
+    color: hsl(233, 8%, 79%);
+}
+
+.topic-image {
+    height: 100%;
+}
+
+.topic-title {
+    margin: 0;
+}
+
+.topic-description{
+    margin: 0;
+    color: hsl(236, 13%, 42%);
+    line-height: 1.5;
 }
