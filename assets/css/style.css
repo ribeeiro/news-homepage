@@ -1,0 +1,26 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+   background-color: hsl(36, 100%, 99%);
+   padding: 0 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 35px;
+}
+
+.menu {
+    width: 28px;
+}
+
+.menu-button {
+    border: none;
+    background-color: hsl(36, 100%, 99%);
+}
