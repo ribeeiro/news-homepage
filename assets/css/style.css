@@ -36,23 +36,21 @@ p{
     border: none;
     background-color: hsl(36, 100%, 99%);
 }
-
-.sidenav {
+ .sidenav {
     height: 100vh;
-    width: 70vw;
+    width: 0;
     padding-top: 50px;
     background-color: hsl(36, 100%, 99%);
     
-    display: inline-block;
-    position: absolute;
-    right: -100vw;
-    transition: right 0.75s;
-}
+    position: fixed;
+    right: 0;
+    transition: width 0.75s;
+} 
 
 .sidenav__open {
-    right: 0;
+    width: 70vw;
     box-shadow: -490px 0 1px 228px hsl(0deg 0% 3% / 56%);
-    transition: right 0.75s;
+    transition: width 0.75s;
 }
 
 .nav-items{
