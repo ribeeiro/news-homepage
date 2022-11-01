@@ -1,11 +1,14 @@
 const sidenav = document.querySelector('.sidenav');
-const menuButton = document.querySelector('.menu');
+const openMenuButton = document.querySelector('#menu_button');
+const closeMenuButton = document.querySelector('#close_button');
+const fadeEffect = document.querySelector('.fade-effect')
 
-menuButton.onclick = function (){
+openMenuButton.onclick = function (){
     sidenav.classList.toggle('sidenav__open')
-    if(sidenav.classList.contains('sidenav__open')){
-        menuButton.src = 'assets/images/icon-menu-close.svg'
-    } else {
-        menuButton.src = 'assets/images/icon-menu.svg'
-    }
+        fadeEffect.style.display = 'block'
+}
+
+closeMenuButton.onclick = function (){
+    sidenav.classList.toggle('sidenav__open')
+        fadeEffect.style.display = 'none'
 }

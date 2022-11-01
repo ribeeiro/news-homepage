@@ -16,20 +16,27 @@
   <header>
     <nav class="navbar">
       <img src="assets/images/logo.svg" alt="Logotipo" class="logo">
-      <button class="menu-button"><img src="assets/images/icon-menu.svg" alt="Botao do Menu" class="menu"></button>
+      <button class="menu" id="menu_button"><img src="assets/images/icon-menu.svg" alt="Botao para abrir o menu" class="open-menu__image"></button>
     </nav>
     <nav class="sidenav">
-      <ul class="nav-items">
-        <li class="nav-item">Home</li>
-        <li class="nav-item">New</li>
-        <li class="nav-item">Popular</li>
-        <li class="nav-item">Trending</li>
-        <li class="nav-item">Categories</li>
-      </ul>
+
+      <div class="sidenav-wrapper">
+        <button class="menu" id="close_button"><img src="assets/images/icon-menu-close.svg" alt="Botão para fechar o menu" class="close-menu__image"></button>
+        <ul class="nav-items">
+          <li class="nav-item">Home</li>
+          <li class="nav-item">New</li>
+          <li class="nav-item">Popular</li>
+          <li class="nav-item">Trending</li>
+          <li class="nav-item">Categories</li>
+        </ul>
+      </div>
+
     </nav>
   </header>
 
   <main>
+    <div class="fade-effect"></div>
+    
     <section class="main-card">
       <img src="assets/images/image-web-3-mobile.jpg" alt="Imagem principal" class="main-card__image">
       <article class="main-card__article">

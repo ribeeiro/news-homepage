@@ -29,38 +29,68 @@ p{
 }
 
 .menu {
-    height: 15px;
-}
-
-.menu-button {
     border: none;
     background-color: hsl(36, 100%, 99%);
 }
+
+.open-menu__image {
+    height: 15px;
+}
+
  .sidenav {
     height: 100vh;
     width: 0;
-    padding-top: 50px;
     background-color: hsl(36, 100%, 99%);
+    z-index: 2;
     
+    overflow: hidden;
     position: fixed;
     right: 0;
+    top: 0;
     transition: width 0.75s;
 } 
 
+#close_button {
+    align-self: self-end;
+}
+
 .sidenav__open {
-    width: 70vw;
-    box-shadow: -490px 0 1px 228px hsl(0deg 0% 3% / 56%);
+    width: 69vw;
     transition: width 0.75s;
+}
+
+.sidenav-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    height: 46vh;
 }
 
 .nav-items{
     list-style-type: none;
-    padding: 0 0 0 20px;
-    height: 25%;
+    padding: 0;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     justify-items: center;
+}
+
+.nav-item{
+    color: hsl(240, 100%, 5%);
+}
+
+.fade-effect {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: hsl(0deg 0% 3% / 56%);
 }
 
 .main-card__image {
