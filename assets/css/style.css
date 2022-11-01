@@ -19,20 +19,48 @@ p{
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 0;
+    height: 40px;
 }
 
 .logo {
-    width: 35px;
+    height: 20px;
 }
 
 .menu {
-    width: 28px;
+    height: 15px;
 }
 
 .menu-button {
     border: none;
     background-color: hsl(36, 100%, 99%);
+}
+
+.sidenav {
+    height: 100vh;
+    width: 70vw;
+    padding-top: 50px;
+    background-color: hsl(36, 100%, 99%);
+    
+    position: absolute;
+    right: -100vw;
+    transition: 0.75s;
+}
+
+.sidenav__open {
+    right: 0;
+    transition: 0.75s;
+}
+
+.nav-items{
+    list-style-type: none;
+    padding: 0 0 0 20px;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
 }
 
 .main-card__image {
@@ -98,7 +126,7 @@ p{
     padding-left: 22px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .topic-index {
