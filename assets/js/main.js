@@ -4,11 +4,13 @@ const closeMenuButton = document.querySelector('#close_button');
 const fadeEffect = document.querySelector('.fade-effect')
 
 openMenuButton.onclick = function (){
-    sidenav.classList.toggle('sidenav__open')
-        fadeEffect.style.display = 'block'
+    sidenav.classList.toggle('sidenav__open');
+        fadeEffect.style.display = 'block';
+        document.body.style.overflow = 'hidden';
 }
 
 closeMenuButton.onclick = function (){
-    sidenav.classList.toggle('sidenav__open')
-        fadeEffect.style.display = 'none'
+    sidenav.classList.toggle('sidenav__open');
+        fadeEffect.style.display = 'none';
+        document.body.style.overflow = 'visible';
 }
