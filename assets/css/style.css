@@ -43,14 +43,16 @@ p{
     padding-top: 50px;
     background-color: hsl(36, 100%, 99%);
     
+    display: inline-block;
     position: absolute;
     right: -100vw;
-    transition: 0.75s;
+    transition: right 0.75s;
 }
 
 .sidenav__open {
     right: 0;
-    transition: 0.75s;
+    box-shadow: -490px 0 1px 228px hsl(0deg 0% 3% / 56%);
+    transition: right 0.75s;
 }
 
 .nav-items{
