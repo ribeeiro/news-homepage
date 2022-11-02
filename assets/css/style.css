@@ -186,7 +186,7 @@ p{
 .new:nth-child(-n+3)::after{
     display: inline-block;
     content: '';
-    border-top: solid 1px white;
+    border-top: solid 1px hsl(233, 8%, 79%);
     width: 96%;
 }
 .new-title {
