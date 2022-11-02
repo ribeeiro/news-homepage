@@ -242,10 +242,37 @@ p{
             "main new"
             "other-topics other-topics"
         ;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 50px;
     }
 
     .main-card {
         grid-area: main;
+    }
+
+    .main-card__article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        padding-top: 30px;
+    }
+
+    .main-card__title{
+        grid-row: span 2;
+        font-size: 3.5rem;
+    }
+
+    .main-card__button{
+        grid-column: 2;
+        height: 50px;
+        align-self: flex-end;
+    }
+
+    .main-card__description{
+        margin: 0;
+        line-height: 1.5;
+        font-size: 1rem;
     }
 
     .new-card {
