@@ -193,9 +193,12 @@ p{
     color: hsl(35, 77%, 62%);
 }
 
-.new-article__title{
-    color: hsl(36, 100%, 99%);
+.new-article__title {
     margin-bottom: 0;
+}
+.new-article__title a {
+    color: hsl(36, 100%, 99%);
+    text-decoration: none;
 }
 
 .new-article__description{
@@ -208,6 +211,11 @@ p{
     display: flex;
     height: 120px;
     padding: 15px 0;
+}
+
+.topic-title a {
+    text-decoration: none;
+    color: hsl(240, 100%, 5%);
 }
 
 .topic-info{
@@ -274,8 +282,14 @@ p{
 
     .main-card__button{
         grid-column: 2;
-        height: 50px;
+        height: 45px;
         align-self: flex-end;
+    }
+
+    .main-card__button:hover {
+        background-color: hsl(240, 100%, 5%);
+        transition: background-color .5s;
+        cursor: pointer;
     }
 
     .main-card__description{
@@ -289,6 +303,14 @@ p{
         margin: 0;
     }
 
+    .new-title {
+        font-size: 2.5rem;
+    }
+    .new-article__title a:hover{
+        color: hsl(35, 77%, 62%);
+        transition: color .5s;
+    }
+
     .other-topics {
         grid-area: other-topics;
         display: grid;
@@ -300,7 +322,17 @@ p{
         width: 342px;
     }
 
+    .topic-title{
+        margin: 0;
+    }
+
+    .topic-title:hover a{
+        color: hsl(5, 85%, 63%);
+        transition: color .5s;
+    }
+
     .topic-description {
         line-height: 1.7;
     }
+
 }
