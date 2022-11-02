@@ -1,6 +1,6 @@
 # [News Homepage](https://news-homepage-green.vercel.app/)
 
-![Final version](./design/screenshot.png)
+![Final version](./design/Screenshot.png)
 
 ## Links
 
