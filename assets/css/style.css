@@ -11,7 +11,7 @@ body {
 
 @media screen and (min-width: 1440px) {
     body{
-        padding: 80px 150px;
+        padding: 70px 150px;
     }
 
     main{
@@ -41,7 +41,7 @@ p{
 
 @media screen and (min-width: 1440px){
     .logo {
-        height: 50px;
+        height: 45px;
     }
 }
 
