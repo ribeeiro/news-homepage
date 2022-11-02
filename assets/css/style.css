@@ -234,3 +234,26 @@ p{
     color: hsl(236, 13%, 42%);
     line-height: 1.5;
 }
+
+@media screen and (min-width: 1440px){
+    main{
+        display: grid;
+        grid-template-areas: 
+            "main new"
+            "other-topics other-topics"
+        ;
+    }
+
+    .main-card {
+        grid-area: main;
+    }
+
+    .new-card {
+        grid-area: new;
+        margin: 0;
+    }
+
+    .other-topics {
+        grid-area: other-topics;
+    }
+}
