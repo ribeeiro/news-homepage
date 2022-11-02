@@ -16,37 +16,41 @@
   <header>
     <nav class="navbar">
       <img src="assets/images/logo.svg" alt="Logotipo" class="logo">
+      
       <button class="menu" id="menu_button"><img src="assets/images/icon-menu.svg" alt="Botao para abrir o menu" class="open-menu__image"></button>
+      <nav class="sidenav">
+      
+        <div class="sidenav-wrapper">
+          <button class="menu" id="close_button"><img src="assets/images/icon-menu-close.svg" alt="Botão para fechar o menu" class="close-menu__image"></button>
+          <ul class="nav-items">
+            <li> <a  class="nav-item" href="#"> Home </a></li>
+            <li> <a  class="nav-item" href="#"> New </a></li>
+            <li> <a  class="nav-item" href="#"> Popular </a></li>
+            <li> <a  class="nav-item" href="#"> Trending </a></li>
+            <li> <a  class="nav-item" href="#"> Categories </a></li>
+          </ul>
+        </div>
+        
+      </nav>
     </nav>
-    <nav class="sidenav">
 
-      <div class="sidenav-wrapper">
-        <button class="menu" id="close_button"><img src="assets/images/icon-menu-close.svg" alt="Botão para fechar o menu" class="close-menu__image"></button>
-        <ul class="nav-items">
-          <li class="nav-item">Home</li>
-          <li class="nav-item">New</li>
-          <li class="nav-item">Popular</li>
-          <li class="nav-item">Trending</li>
-          <li class="nav-item">Categories</li>
-        </ul>
-      </div>
-
-    </nav>
   </header>
-
+  
   <main>
     <div class="fade-effect"></div>
     
     <section class="main-card">
-      <img src="assets/images/image-web-3-mobile.jpg" alt="Imagem principal" class="main-card__image">
+      <div class="image-wrapper">
+        <img src="assets/images/image-web-3-mobile.jpg" alt="Imagem principal" class="main-card__image">
+      </div>
       <article class="main-card__article">
         <h1 class="main-card__title">The Bright Future of Web 3.0?</h1>
         <p class="main-card__description">  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
           But is it really fulfilling its promise?</p>
-        <button class="main-card__button">READ MORE</button>
-      </article>
-    </section>
-
+          <button class="main-card__button">READ MORE</button>
+        </article>
+      </section>
+        
     <section class="new-card">
       <h1 class="new-title">New</h1>
 
@@ -103,7 +107,7 @@
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/Ribeir0o" target="_blank">Thiago Ribeiro</a>.
     </div>
   </footer>
 

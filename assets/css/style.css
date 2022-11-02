@@ -6,6 +6,17 @@ body {
     padding: 0 18px;
     margin: 0;
     font-family: 'Inter', sans-serif;
+
+}
+
+@media screen and (min-width: 1440px) {
+    body{
+        padding: 80px 150px;
+    }
+
+    main{
+        padding-top: 50px;
+    }
 }
 
 h1{
@@ -21,16 +32,28 @@ p{
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    height: 40px;
+    box-sizing: border-box;
 }
 
 .logo {
     height: 20px;
 }
 
+@media screen and (min-width: 1440px){
+    .logo {
+        height: 50px;
+    }
+}
+
 .menu {
     border: none;
     background-color: hsl(36, 100%, 99%);
+}
+
+@media screen and (min-width: 1440px) {
+    .menu {
+        display: none;
+    }
 }
 
 .open-menu__image {
@@ -74,13 +97,43 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    justify-items: center;
 }
 
 .nav-item{
     color: hsl(240, 100%, 5%);
+    text-decoration: none;
 }
 
+@media screen and (min-width:1440px){
+    .sidenav {
+        height: initial;
+        transition: none;
+        position: initial;
+        height: 100%;
+        width: 40%;
+    }
+
+    .sidenav-wrapper {
+        height: initial;
+        padding: 0;
+    }
+
+    .nav-items {
+        flex-direction: row;
+        margin: 0;
+        height: initial;
+        align-items: center;
+    }
+
+    .nav-item {
+        color: hsl(236, 13%, 42%);
+    }
+
+    .nav-item:hover{
+        color: hsl(5, 85%, 63%);
+        transition: color .25s;
+    }
+}
 .fade-effect {
     display: none;
     height: 100vh;
@@ -93,9 +146,14 @@ p{
     background-color: hsl(0deg 0% 3% / 56%);
 }
 
+.image-wrapper {
+    overflow: hidden;
+}
+
 .main-card__image {
     width: 100%;
 }
+
 
 .main-card__title{
     font-weight: 800;
