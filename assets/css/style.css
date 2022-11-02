@@ -243,24 +243,33 @@ p{
             "other-topics other-topics"
         ;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 500px 1fr;
         gap: 50px;
     }
 
     .main-card {
         grid-area: main;
     }
+    .image-wrapper {
+        height: 60%;
+    }
+
+    .main-card__image {
+        content: url('../images/image-web-3-desktop.jpg');
+    }
 
     .main-card__article {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 2fr 1fr;
-        padding-top: 30px;
+        padding-top: 32px;
+        column-gap: 50px;
     }
 
     .main-card__title{
         grid-row: span 2;
         font-size: 3.5rem;
+        line-height: 1;
     }
 
     .main-card__button{
@@ -282,5 +291,16 @@ p{
 
     .other-topics {
         grid-area: other-topics;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 23px;
+    }
+
+    .topic{
+        width: 342px;
+    }
+
+    .topic-description {
+        line-height: 1.7;
     }
 }
